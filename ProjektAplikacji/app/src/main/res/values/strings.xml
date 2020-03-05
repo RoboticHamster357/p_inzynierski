@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PSIA MICHA</string>
+    <string name="title_activity_food_list">FoodList</string>
+    <string name="selected_item">Selected item:</string>
+</resources>
