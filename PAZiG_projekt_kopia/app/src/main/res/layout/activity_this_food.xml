@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".food.ThisFoodActivity"
+    android:background="@color/colorBackground"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/tv_food_name"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+    />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wartość kaloryczna posiłku:"
+        android:textColor="@color/colorPrimaryDark"
+    />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_food_calorific"
+        android:textColor="@color/colorPrimaryDark"
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Reakcja psów na karmę:"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_food_diary"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"/>
+
+</LinearLayout>

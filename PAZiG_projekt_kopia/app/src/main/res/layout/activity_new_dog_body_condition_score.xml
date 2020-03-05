@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:backgroundTint="@color/colorBackground"
+    >
+    <TextView
+        android:id="@+id/test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBright"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="JAK WYGLĄDA TWÓJ PIES?"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/s_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:drawableLeft="@drawable/sylwetka_21_9"
+                    android:drawablePadding="10dp"
+                    android:onClick="radioButtonClick"
+                    android:text="Brak tłuszczu podskórnego. Żebra, kręgi lędźwiowe, kości miednicy i wszystkie wyniosłości kostne widoczne z dużej odległości. Widoczny zanik tkanki mięśniowej obręczy barkowej i miednicznej."
+                    android:textSize="10dp"
+                    android:textColor="@color/colorPrimaryDark"/>
+
+                <RadioButton
+                    android:id="@+id/s_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:drawableLeft="@drawable/sylwetka_22_9"
+                    android:drawablePadding="10dp"
+                    android:onClick="radioButtonClick"
+                    android:text="Żebra, kręgi lędźwiowe i kości miednicy łatwo wyczuwalne. Mogą być dobrze widoczne. Brak wyczuwalnej tkanki tłuszczowej. Dostrzegalne inne wyniosłości kostne. Niewielki zanik tkanki mięśniowej. Mocno zaznaczona talia i bardzo mocno podkasany brzuch."
+                    android:textSize="10dp"
+                    android:textColor="@color/colorPrimaryDark"/>
+
+                <RadioButton
+                    android:id="@+id/s_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:drawableLeft="@drawable/sylwetka_23_9"
+                    android:drawablePadding="10dp"
+                    android:onClick="radioButtonClick"
+                    android:text="Żebra łatwo wyczuwalne przez omacywanie, mogą być widoczne. Brak wyczuwalnej tkanki tłuszczowej. Kręgosłup lekko zauważalny, uwydatnione kości miednicy. Wyraźnie zaznaczona talia oraz podkasany brzuch."
+                    android:textSize="10dp"
+                    android:textColor="@color/colorPrimaryDark"/>
+
+                <RadioButton
+                    android:id="@+id/s_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:drawableLeft="@drawable/sylwetka_24_9"
+                    android:drawablePadding="10dp"
+                    android:onClick="radioButtonClick"
+                    android:text="Żebra łatwo wyczuwalne, niekoniecznie widoczne z minimalną ilością pokrywającej je tkanki tłuszczowej. Dobrze widoczna talia patrząc od góry. Lekko podkasany brzuch."
+                    android:textSize="10dp"
+                    android:textColor="@color/colorPrimaryDark"/>
+
+                <RadioButton
+                    android:id="@+id/s_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:drawableLeft="@drawable/sylwetka_25_9"
+                    android:drawablePadding="10dp"
+                    android:onClick="radioButtonClick"
+                    android:text="Żebra lekko wyczuwalne, niewidoczne bez nadmiaru pokrywającej je tkanki tłuszczowej. Za żebrami widoczne wcięcie w talii patrząc od góry. Brzuch podkasany patrząc od boku, bez fałd tłuszczu."
+                    android:textSize="10dp"
+                    android:textColor="@color/colorPrimaryDark"/>
+
+                <RadioButton
+                    android:id="@+id/s_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:drawableLeft="@drawable/sylwetka_26_9"
+                    android:drawablePadding="10dp"
+                    android:onClick="radioButtonClick"
+                    android:text="Żebra wyczuwalne, niewidoczne z niewielkim nadmiarem tkanki tłuszczowej. Wcięcie w talii patrząc z boku dostrzegalne, ale nie jest wyraźne. Pod skórą wyczuwalne tworzące się fałdy tłuszczu."
+                    android:textSize="10dp"
+                    android:textColor="@color/colorPrimaryDark"/>
+
+                <RadioButton
+                    android:id="@+id/s_7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:drawableLeft="@drawable/sylwetka_27_9"
+                    android:drawablePadding="10dp"
+                    android:onClick="radioButtonClick"
+                    android:text="Z trudnością wyczuwalne żebra, obficie pokryte tkanką tłuszczową. Zauważalne pokłady tkanki tłuszczowej w okolicy lędźwiowej i nasady ogona. Linia brzucha pozioma lub wisząca."
+                    android:textSize="10dp"
+                    android:textColor="@color/colorPrimaryDark"/>
+
+                <RadioButton
+                    android:id="@+id/s_8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:drawableLeft="@drawable/sylwetka_28_9"
+                    android:drawablePadding="10dp"
+                    android:onClick="radioButtonClick"
+                    android:text="Żebra niewyczuwalne pod grubą okrywą tkanki tłuszczowej lub wyczuwalne przy dużym nacisku. Znaczne podkłady tkanki tłuszczowej w okolicy lędźwiowej i nasady ogona, niewidoczna talia. Brak podkasania brzucha. Widoczne może być powiększenie obrysu jamy brzusznej na boki."
+                    android:textSize="10dp"
+                    android:textColor="@color/colorPrimaryDark"/>
+
+                <RadioButton
+                    android:id="@+id/s_9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:drawableLeft="@drawable/sylwetka_29_9"
+                    android:drawablePadding="10dp"
+                    android:onClick="radioButtonClick"
+                    android:text="Żebra niewyczuwalne. Bardzo obfite pokłady tkanki tłuszczowej pokrywające klatkę piersiową, wzdłuż kręgosłupa, a także u nasady ogona i nóg. Niewidoczna talia i brak podkasania brzucha. Pokłady tkanki tłuszczowej na szyi i okolicy lędźwiowej. Wyraźne powiększenie jamy brzusznej, brzuch uwypuklony i opada."
+                    android:textSize="10dp"
+                    android:textColor="@color/colorPrimaryDark"/>
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="DODAJ PSA"
+                android:textAlignment="center"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColor="#ffff"
+                />
+     </LinearLayout>
+    </ScrollView>
+</LinearLayout>
